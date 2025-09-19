@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template: auto 1fr auto / auto 1fr auto;
+            height: 100vh;
+            grid-template-areas:
+                "header header header"
+                "left main right"
+                "footer footer footer";
+        }
+
+        .section {
+            padding: 2rem;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #FFEDDB;
+        }
+
+        .left-side {
+            grid-area: left;
+            background-color: #CEF;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #EAFDE7;
+        }
+
+        .right-side {
+            grid-area: right;
+            background-color: #FFDBFF;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #FFEDDB;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="section">Header</header>
+        <div class="left-side section">Left Sidebar</div>
+        <main class="section">Main Content</main>
+        <div class="right-side section">Right Sidebar</div>
+        <footer class="section">Footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/*Media Query -> Device first*/
+
+#container {
+  display: grid;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.3rem;
+  margin: 1rem;
+
+  grid-template-areas:
+    "header"
+    "a"
+    "b"
+    "c"
+    "d"
+    "footer";
+
+  @media (min-width: 720px) {
+    grid-template-areas:
+      "header header header header"
+      "a b c d"
+      "footer footer footer footer";
+  }
+
+
+  @media (min-width: 1024px) {
+    grid-template-areas:
+      "header header header "
+      "a b c "
+      " d d d "
+      "footer footer footer ";
+  }
+}
+#container > * {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+
+#a {
+  background: lightblue;
+  grid-area: a;
+}
+
+#b {
+  background: orange;
+  grid-area: b;
+}
+
+#c {
+  background: gray;
+  grid-area: c;
+}
+
+#d {
+  background: coral;
+  grid-area: d;
+}
+
+header {
+  grid-area: header;
+  background: blueviolet;
+}
+
+footer{
+  grid-area: footer;
+  background: blue;
+}
