@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Collection of all colours in this project. From ColorHunt.co*/
+/* Collection of all colours in this project. From https://colorhunt.co/palette/f9f5f0f2ead3f4991a344f1f*/
 :root{
-    --base-color:#ffffff;
+    --base-color:#F2EAD3;
     --text-color:#000000;
-    --primary-color:#ffc06e;
-    --secondary-color:#8D8DFF;
-    --color-1: #F9F6F3;
+    --primary-color:#F4991A;
+    --secondary-color:#344F1F;
+    --color-1: #F9F5F0;
     --color-2: #F3F7F9;
     --color-3: #F6F3F9;
 }
 
-/* Reset margin and padding on entire page and set box-sizing*/
+/* Reset margin and padding on entire page and set box-sizing to border-box to easy sizing*/
 *{
     margin: 0;
     padding: 0;
@@ -46,6 +46,7 @@ nav ul {
     list-style-type: none;
     gap: 2em;
 }
+
 /* Pushes "Andreas" to the left and the rest to the right*/
 nav li:first-child{
     margin-right: auto;
@@ -220,7 +221,7 @@ Font size back to normal.*/
     .text-container{
         font-size:1rem;
     }
-    
+
     h2{
         font-size: 1.5 rem;
     }
