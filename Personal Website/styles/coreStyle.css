@@ -39,7 +39,6 @@ nav{
     margin: 1em auto 3em auto;
     width: min(1000px, 100%);
     background-color: var(--color-1);
-    z-index: 9999;
 }
 
 nav ul {
@@ -69,55 +68,15 @@ header, section{
     margin: 2em auto;
     width: min(75em, 100%);
     background-color: var(--color-1);
-    padding:min(2em, 15%);
+    padding:min(2em, 1%);
     border-radius: 1em;
 }
 
-/*Flex wrap to make elements stack on smaller displays. 3em gap between text and image*/
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3em;
-}
 
-/* Border radius cuts off the corners of the image.*/
-header img{
-    max-width: 100%;
-    border-radius:1em;
-    object-fit: cover;
-    object-position: bottom;
-}
 
-/* Shrink if the screen is less than 34 em*/
-.text-container{
-    flex: 0 1 34em;
-}
 
 h1{
     font-size:2.5rem;
-}
-
-/*Make text slightly larger and set margins to look nice*/
-.text-container p {
-    margin: .75em 0 1em 0;
-    font-size: 1.25rem;
-}
-
-/*Make our links pop as cta-buttons. Font weight makes text bold.*/
-.cta-button{
-    display:inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: var(--primary-color);
-    padding: 0.75em 1.25em;
-    border-radius: 0.5em;
-    font-weight: 600
-}
-
-.secondary{
-    background-color: var(--secondary-color);
 }
 
 section{
@@ -139,92 +98,21 @@ section img{
     object-fit: cover;
 }
 
-section#portfolio{
-    background-color: var(--color-3);
-}
 
-.grid-container{
-    display:grid;
-    margin-top:3em;
-    margin-bottom:3em;
-    width:100%;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "img-1 img-1 img-2 img-3"
-    "img-1 img-1 img-4 img-5";
-    gap: 1em;
-}
-
-/*Transition for a hover-effect. Scale to make images bigger on hover. */
-.grid-container img{
-    height: 100%;
-    width: 100%;
-    border-radius: 0.5em;
-    transition: 300ms ease;
-}
-
-.grid-container img:hover{
-    scale: 1.05;
-}
 
 footer{
     padding-bottom: 1.5em;
     text-align: center;
 }
-
 footer a{
     margin: 0 1em;
     text-decoration: none;
     color: var(--text-color);
 }
-
 footer a:hover{
     text-decoration: underline;
 }
 
-/*988px is when the image changes position*/
-@media(max-width:988px){
-header{
-    text-align:center;
-}
 
-header .text-container{
-    padding-top:0;
-}
-}
 
-/*When the headers start to collide show only Name, CV and Contact.
-Make space between cta-buttons and make them wider.
-Also change the grid for the images to a column.
-Font size back to normal.*/
-@media(max-width:640px){
-    nav li{
-        display: none;
-    }
-    nav li:first-child,
-    nav li:nth-last-child(2),
-    nav li:last-child{
-        display:block;
-    }
-    header{
-        margin-top: 0;
-    }
 
-    .cta-button{
-        margin-top:0.5em;
-        width:100%;
-    }
-    .grid-container{
-        display:flex;
-        flex-direction: column;
-    }
-
-    .text-container{
-        font-size:1rem;
-    }
-
-    h2{
-        font-size: 1.5 rem;
-    }
-}

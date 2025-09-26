@@ -1,0 +1,8 @@
+1. Navigationsbar skal have en knap med javascript til devicestørrelse. 
+Der skal altså ikke forsvinde ting i headeren. De skal skjules med en knap i stedet.
+2. Fix CV - Sidebar styling. Tilføj indhold.
+3. Fix portfolio links.
+4. Overvej portfolio i det hele taget. Hvor skal man kunne tilgå? Hvordan skal det hænge sammen med GitHub?
+5. Andet colorscheme?
+6. Lad sidebar kunne forsvinde i mobiltilstand vha. JS med en knap.
+

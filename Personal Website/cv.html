@@ -1,56 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - AHJ</title>
+  <link rel="stylesheet" href="styles/coreStyle.css" />
+  <link rel="stylesheet" href="styles/cvStyle.css" />
 </head>
 <body>
-    <header>
-        <nav>
-        <ul>
-          <li><a href="index.html">Andreas</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/ahausgaard/">LinkedIn</a>
-          </li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="mailto:ahausgaardjakobsen@gmail.com">Contact</a></li>
-        </ul>
-        <img align = left height="80px" width="60px" src="images/portrait.JPG" alt="portrait.jpg" />
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Andreas</a></li>
+        <li><a href="https://www.linkedin.com/in/ahausgaard/">LinkedIn</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="mailto:ahausgaardjakobsen@gmail.com">Contact</a></li>
+      </ul>
     </nav>
-    </header>
-    <div class="flex-container">
-        
-        <div class="text-container">
-          
-          <ul>
-            <h3>Details</h3>   
-            <ul>Address: Lauritshøj 236, 8541 Skødstrup</ul>
-            <ul>Telephone: 42545541</ul>
-          </ul>
+    <h1>Curriculum Vitae</h1>
     
+  </header>
+  <div class ="cv-grid">
+  
 
-          <ul>
-          <h3>
-            Employment history
-          </h3>
-          <ul>Software trainee at KeyHole 2025 -</ul> 
-          <ul>Folkeskolelærer at Hornbæk Skole 2019-2025</ul>
-          </ul>
-          <h3>Education</h3>
-          <ul>2025 - : Softwareingeniør v. VIA UC Horsens</ul>
-          <ul>
-            2015 - 2019: Folkeskolelærer v. VIA UC Aarhus 
-          </ul>
-          <ul>2012 - 2014: Softwareingeniør v. Ingeniørhøjskolen Aarhus</ul>
-        </div>
+<aside>
+  <img height="200px" width="150px" src="images/portrait.JPG" alt="portrait.jpg" />
+      <h2>Sidebar</h2>
+      <p>Address: Lauritshøj 236, Skødstrup</p>
+</aside>
+    <main>
+    
+    <section class="cv-section">
+      <h2>About me</h2>
+      <p>
+        Kort profiltekst om dig selv. Fx et par linjer om baggrund, styrker
+        og hvad du søger.
+      </p>
+    </section>
+
+    
+    <section class="cv-section">
+      <h2>Work Experience</h2>
+      <div class="cv-item">
+        <h3>Software Engineer Trainee – KeyHole</h3>
+        <span class="cv-dates">2025 – now</span>
+        <p>
+          Backend engineer working with .NET, Blazor and PowerBI.
+        </p>
       </div>
-    <footer>
-        <a href="https://www.linkedin.com/in/ahausgaard/">LinkedIn</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="mailto:ahausgaardjakobsen@gmail.com">Contact</a>
-    </footer>
+      <div class="cv-item">
+        <h3>Teacher – Hornbæk Skole, Randers</h3>
+        <span class="cv-dates">2019 – 2025</span>
+        <p>
+          Kort tekst om dine vigtigste opgaver og resultater.
+        </p>
+      </div>
+    </section>
+
+    
+    <section class="cv-section">
+      <h2>Education</h2>
+      <div class="cv-item">
+        <h3>Software engineer </h3>
+        <span class="cv-dates">2025 - now</span>
+        <p>
+          VIA UC Horsens, Software Engineering Trainee
+        </p>
+        <h3>Teacher </h3>
+        <span class="cv-dates">2015 - 2019</span>
+        <p>
+          VIA UC Aarhus, with specialisation in Danish, Maths and English.
+        </p>
+      </div>
+    </section>
+
+    
+    <section class="cv-section">
+      <h2>Tech Stack</h2>
+      <ul class="skills-list">
+        <li>HTML / CSS / JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>.NET</li>
+        <li>PowerBI</li>
+        <li>Blazor</li>
+        <li>.NET MAUI</li>
+        <li>Agile/Scrum</li>
+      </ul>
+    </section>
+  </main>
+</div>
+  <footer>
+    <a href="https://www.linkedin.com/in/ahausgaard/">LinkedIn</a>
+    <a href="index.html#portfolio">Portfolio</a>
+    <a href="mailto:ahausgaardjakobsen@gmail.com">Contact</a>
+  </footer>
 </body>
 </html>
